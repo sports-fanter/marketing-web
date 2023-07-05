@@ -1,6 +1,6 @@
 {
   "name": "@sports-fanter/marketing-web",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -20,7 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "deploy": "npm version patch && npm run deploy:docs",
-    "deploy:docs": "npm version patch --prefix build && npm run build && npm publish ./build --access public",
+    "deploy:docs": "npm version patch --prefix public && npm run build && npm publish ./build --access public",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
