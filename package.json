@@ -19,6 +19,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "npm version patch && npm run deploy:docs",
+    "deploy:docs": "npm version patch --prefix build && npm run build && npm publish ./build --access public",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
